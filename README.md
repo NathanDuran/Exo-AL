@@ -26,5 +26,3 @@ available from: https://github.com/NathanDuran/Feature-Extraction
 
 -The corresponding 20 light curves are contained in Exo-AL/web/resources/lightcurves/
 making the program fully functional but scaled down.
-
--test
