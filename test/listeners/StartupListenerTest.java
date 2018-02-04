@@ -1,20 +1,18 @@
 package listeners;
 
-import java.io.InputStream;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletContextEvent;
-import static org.hamcrest.CoreMatchers.instanceOf;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.*;
 import org.mockito.*;
-import static org.mockito.Mockito.*;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 import weka.core.converters.ConverterUtils.DataSource;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import java.io.InputStream;
+
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.*;
 
 /**
  *
