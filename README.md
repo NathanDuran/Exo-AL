@@ -16,7 +16,7 @@ Think of it as 'teaching' the AI to be better at its job.
 -Datasets were created from the raw light curve data from the Kepler mission
 available from: https://exoplanetarchive.ipac.caltech.edu/index.html
 
--A set of statistical features were for each stars light curve using a separate feature extraction module
+-A set of statistical features were created for each stars light curve using a separate feature extraction module
 available from: https://github.com/NathanDuran/Feature-Extraction
 
 -Due to the size of the full light curve dataset a smaller dataset was created from
