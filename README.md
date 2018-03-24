@@ -11,13 +11,12 @@ whether you think it may, or may not, be host to an orbiting exoplanet. By askin
 help the AI to classify stars we hope to improve its ability to classify stars in the future.
 Think of it as 'teaching' the AI to be better at its job.
 
--You can find the project at: www.nated.co.uk
+-You can find the project at: ~~www.nated.co.uk~~
 
 -Datasets were created from the raw light curve data from the Kepler mission
 available from: https://exoplanetarchive.ipac.caltech.edu/index.html
 
--A set of statistical features were created for each stars light curve using a separate feature extraction module
-available from: https://github.com/NathanDuran/Feature-Extraction
+-A set of statistical features were created for each stars light curve using a separate feature extraction module.
 
 -Due to the size of the full light curve dataset a smaller dataset was created from
 20 light curves and has been included: Exo-AL/web/resources/datasets/ValidationSetTEST.arff
@@ -26,3 +25,19 @@ available from: https://github.com/NathanDuran/Feature-Extraction
 
 -The corresponding 20 light curves are contained in Exo-AL/web/resources/lightcurves/
 making the program fully functional but scaled down.
+
+# FeatureExtraction Module
+Kepler Light Curve Feature Extraction
+
+The feature extraction software converts Kepler Light Curve data into a set of statistical features
+for use with the Weka machine learning classifiers.
+
+-Light Curve data must be included in .csv format in the resource directory
+
+-The list of stars to be processed must be included as text file lists of stars by Kepler ID
+
+-To run the JAR from within its directory: java -jar FeatureExtraction.jar {host star list} {non-host star list} {set name}
+
+-Two small test sets are included for demonstration purposes "HostTEST" and "NonHostTEST"
+
+-The output .arff file will be created in the /resources/output directory
